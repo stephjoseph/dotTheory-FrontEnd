@@ -31,6 +31,10 @@ nav button {
   -moz-appearance: none;
 }
 
+nav ul {
+  display: none;
+}
+
 /* HEADER STYLES */
 
 header {
@@ -65,6 +69,7 @@ header .header-img-container {
 .heading {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 24px;
   width: 20.938rem;
 }
@@ -191,4 +196,96 @@ footer small {
   font-weight: 500;
   line-height: 140%;
   letter-spacing: normal;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1972px;
+  }
+
+  nav {
+    padding: 3.25rem 4rem;
+    margin-bottom: 4.75rem;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul {
+    display: block;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  nav ul a {
+    text-decoration: none;
+    font-family: "New York Small";
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: black;
+  }
+
+  nav ul a:hover {
+    text-decoration: underline;
+  }
+
+  header {
+    padding-bottom: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  header img {
+    width: 53.375rem;
+  }
+
+  .heading {
+    width: 48rem;
+    gap: 2rem;
+  }
+
+  .heading h1 {
+    font-size: 3.375rem;
+    line-height: 100%;
+  }
+
+  .heading p {
+    width: 37rem;
+    font-size: 1.25rem;
+  }
+
+  main {
+    gap: 2.5rem;
+  }
+
+  main h2 {
+    font-size: 2.75rem;
+    line-height: 3.313rem;
+  }
+
+  article {
+    width: 19rem;
+    height: 17.125rem;
+  }
+
+  article img {
+    width: 19rem;
+    height: 11rem;
+  }
+
+  .articles {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 4rem;
+    column-gap: 1.75rem;
+  }
+
+  footer p {
+    width: 30.5rem;
+    font-size: 1rem;
+  }
 }
