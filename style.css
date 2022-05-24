@@ -1,0 +1,6 @@
+body {
+  display: grid;
+  place-items: center;
+  font-family: "SF Pro Text";
+  font-weight: 700;
+}
