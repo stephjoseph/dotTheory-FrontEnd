@@ -96,7 +96,7 @@ p {
 /* MAIN STYLES */
 
 main {
-  width: 20.938rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,6 +118,7 @@ article img {
 }
 
 .articles {
+  width: 20.938rem;
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   place-items: center;
@@ -279,6 +280,7 @@ footer small {
   }
 
   .articles {
+    width: 39.75rem;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     row-gap: 4rem;
     column-gap: 1.75rem;
