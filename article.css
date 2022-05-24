@@ -1,0 +1,404 @@
+body {
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+}
+/* NAV STYLES */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 1px 0 0 rgb(0 0 0 / 0.16);
+  margin-bottom: 3.25rem;
+}
+
+nav button {
+  display: inline-block;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  background: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+nav ul {
+  display: none;
+}
+
+/* HEADER STYLES */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+
+header img {
+  width: 100%;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 20.938rem;
+}
+
+.heading h1,
+p {
+  margin: 0;
+}
+
+.heading h1 {
+  font-famiy: "New York Extra Large";
+  font-size: 2.25rem;
+  line-height: 2.688rem;
+  letter-spacing: normal;
+}
+
+.heading p {
+  font-family: "SF Mono";
+  font-weight: 400;
+  line-height: 170%;
+  letter-spacing: normal;
+}
+
+/* MAIN STYLES */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .author {
+  width: 20.938rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.author .author-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author .author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.author .author-details h3 {
+  font-family: "SF Pro Text";
+  font-weight: bold;
+  font-size: 0.813rem;
+  line-height: 1rem;
+  letter-spacing: 5%;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.author .author-details p {
+  font-family: "SF Pro Text";
+  font-weight: 400;
+  font-size: 0.813rem;
+  line-height: 1rem;
+  letter-spacing: 0%;
+}
+
+.author .author-img-container {
+  width: 3.5rem;
+  height: 3.894rem;
+  border-radius: 50%;
+}
+
+.author img {
+  width: 3.5rem;
+  height: 3.894rem;
+  border-radius: 50%;
+}
+
+.author-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+}
+
+.author-links a:nth-child(1),
+.author-links a:nth-child(2) {
+  border-right: 1px solid #eaeaea;
+}
+
+.author-links img {
+  width: 20px;
+  height: 20px;
+}
+
+.author-links a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.063rem 0;
+}
+
+main article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.625rem;
+  margin-bottom: 48px;
+}
+
+main article p {
+  width: 20.938rem;
+  font-family: "New York Medium";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 170%;
+  letter-spacing: 0;
+}
+
+main article h2 {
+  margin: 0 0 19px 0;
+  font-family: "SF Pro Display";
+  font-weight: 700;
+  line-height: 1.938rem;
+}
+
+main article figure {
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+main figure figcaption {
+  width: 20.938rem;
+  font-family: "SF Pro Text";
+  font-weight: 500;
+  line-height: 140%;
+  font-size: 13px;
+}
+
+main article figure img {
+  width: 100%;
+}
+
+.read-next {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  place-items: center;
+  text-align: center;
+  gap: 2.625rem;
+  border-top: 2px solid black;
+  border-bottom: 10px solid black;
+}
+
+.read-next article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.read-next article a {
+  width: 18rem;
+  text-decoration: none;
+  color: black;
+  font-family: "SF Pro Display";
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: 120%;
+  letter-spacing: normal;
+}
+
+.read-next article img {
+  width: 100%;
+}
+
+.read-next article a:hover,
+.read-next article a:active {
+  text-decoration: underline;
+}
+
+main .newsletter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  padding: 40px 0 40px 0;
+  border-bottom: 2px solid black;
+  margin-bottom: 3.25rem;
+}
+
+main .newsletter div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+main .newsletter h2 {
+  margin: 0;
+  width: 15.563rem;
+  font-family: "New York Extra Large";
+  font-weight: 700;
+  font-size: 1.813rem;
+  line-height: 100%;
+}
+
+main .newsletter p {
+  width: 19.125rem;
+  font-family: "SF Pro Text";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 140%;
+}
+
+main .newsletter form {
+  display: flex;
+  width: 19.125rem;
+  position: relative;
+}
+
+main .newsletter input {
+  width: 75%;
+  padding: 1.125rem 0.75rem 1.125rem 0.75rem;
+  font-family: "SF Pro Text";
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.188rem;
+}
+
+main .newsletter input:focus {
+  outline: none;
+}
+
+main .newsletter form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 6.75rem;
+  background: black;
+  border: none;
+  color: white;
+  font-family: "SF Pro Text";
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.188rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* FOOTER STYLES */
+
+footer {
+  background: black;
+  color: white;
+  padding-top: 6.438rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+footer p {
+  width: 17.938rem;
+  font-family: "New York Small";
+  font-weight: 400;
+  font-size: 0.813rem;
+  line-height: 140%;
+  letter-spacing: normal;
+}
+
+footer ul {
+  list-style: none;
+  color: white;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 1.688rem;
+}
+
+footer ul a {
+  color: white;
+  font-family: "SF Pro Text";
+  font-weight: 500;
+  font-size: 0.813rem;
+  line-height: 170%;
+  letter-spacing: normal;
+}
+
+footer small {
+  font-family: "SF Pro Text";
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: normal;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1972px;
+  }
+
+  nav {
+    padding: 3.25rem 4rem;
+    margin-bottom: 4.75rem;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul {
+    display: block;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  nav ul a {
+    text-decoration: none;
+    font-family: "New York Small";
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: black;
+  }
+
+  nav ul a:hover {
+    text-decoration: underline;
+  }
+}

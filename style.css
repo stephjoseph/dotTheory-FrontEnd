@@ -96,7 +96,7 @@ p {
 /* MAIN STYLES */
 
 main {
-  width: 20.938;
+  width: 20.938rem;
   display: flex;
   flex-direction: column;
   align-items: center;
