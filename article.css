@@ -207,13 +207,22 @@ main article figure img {
 }
 
 .read-next {
-  display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   gap: 2.625rem;
   border-top: 2px solid black;
   border-bottom: 10px solid black;
+  padding-top: 4.5rem;
+}
+
+.read-next h2 {
+  margin: 0;
+  font-family: "New York Extra Large";
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 38px;
 }
 
 .read-next article {
@@ -400,5 +409,63 @@ footer small {
 
   nav ul a:hover {
     text-decoration: underline;
+  }
+
+  .heading {
+    width: 53.625rem;
+    gap: 52px;
+  }
+
+  .heading h2 {
+    font-size: 3.375rem;
+    line-height: 100%;
+  }
+
+  .heading p {
+    font-size: 1.25rem;
+    width: 39.125rem;
+  }
+
+  main .author {
+    width: 40rem;
+  }
+
+  main article p {
+    width: 40rem;
+  }
+
+  .read-next {
+    width: 60.5rem;
+  }
+
+  .read-next h2 {
+    font-size: 44px;
+  }
+
+  .read-next-articles {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 2rem;
+  }
+
+  main .newsletter {
+    border: none;
+  }
+
+  main .newsletter h2 {
+    width: 27.75rem;
+  }
+
+  main .newsletter p {
+    width: 33.625rem;
+  }
+
+  main .newsletter form {
+    width: 32.5rem;
+  }
+
+  footer p {
+    width: 30.5rem;
+    font-size: 1rem;
   }
 }
