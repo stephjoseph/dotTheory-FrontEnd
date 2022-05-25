@@ -1,0 +1,561 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+}
+/* NAV STYLES */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.16);
+  margin-bottom: 3.25rem;
+  button {
+    display: inline-block;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    background: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  ul {
+    display: none;
+  }
+}
+
+/* HEADER STYLES */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2.25rem;
+  margin-bottom: 1.5rem;
+
+  img {
+    width: 100%;
+  }
+  .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 20.938rem;
+
+    @at-root #{&}__title {
+      font-family: "New York Extra Large";
+      font-size: 2.25rem;
+      line-height: 2.688rem;
+      letter-spacing: normal;
+      margin: 0;
+    }
+
+    @at-root #{&}__subtitle {
+      font-family: "SF Mono";
+      font-weight: 400;
+      line-height: 170%;
+      letter-spacing: normal;
+    }
+  }
+}
+
+/* MAIN STYLES */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .author {
+    width: 20.938rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-bottom: 2rem;
+
+    @at-root #{&}__info {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    @at-root #{&}__details {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+
+      h3 {
+        font-family: "SF Pro Text";
+        font-weight: bold;
+        font-size: 0.813rem;
+        line-height: 1rem;
+        letter-spacing: 5%;
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      p {
+        font-family: "SF Pro Text";
+        font-weight: 400;
+        font-size: 0.813rem;
+        line-height: 1rem;
+        letter-spacing: 0%;
+        margin: 0;
+      }
+    }
+
+    @at-root #{&}__img-container {
+      width: 3.5rem;
+      height: 3.894rem;
+      border-radius: 50%;
+    }
+
+    @at-root #{&}__img {
+      width: 3.5rem;
+      height: 3.894rem;
+      border-radius: 50%;
+    }
+
+    .author__links {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      border: 1px solid #eaeaea;
+      border-radius: 4px;
+
+      a:nth-child(1),
+      a:nth-child(2) {
+        border-right: 1px solid #eaeaea;
+      }
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+
+      a {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.063rem 0;
+      }
+    }
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.625rem;
+    margin-bottom: 48px;
+
+    p {
+      width: 20.938rem;
+      font-family: "New York Medium";
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 170%;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 0 0 19px 0;
+      font-family: "SF Pro Display";
+      font-weight: 700;
+      line-height: 1.938rem;
+    }
+
+    figure {
+      margin: 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+
+      figcaption {
+        width: 20.938rem;
+        font-family: "SF Pro Text";
+        font-weight: 500;
+        line-height: 140%;
+        font-size: 13px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .comment-box {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 50%;
+    margin-bottom: 120px;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    input[type="text"] {
+      padding: 16px;
+      font-family: Inter, sans-serif;
+      font-size: 1rem;
+    }
+
+    input[type="text"]:focus,
+    textarea:focus {
+      outline: none;
+    }
+
+    textarea {
+      padding: 16px;
+      font-family: Inter, sans-serif;
+      font-size: 1rem;
+      height: 6rem;
+    }
+
+    h2 {
+      margin: 0;
+    }
+
+    button {
+      width: 10rem;
+      padding: 0.5rem 1rem;
+      font-family: Inter, sans-serif;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  }
+
+  .comments {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 1rem;
+    margin-bottom: 120px;
+
+    @at-root #{&}__comment {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 2rem;
+      border: 1px solid rgba(0, 0, 0, 0.6);
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+      h3 {
+        font-size: 1.5rem;
+        font-family: Inter, sans-serif;
+        font-weight: 600;
+        margin: 0;
+        span {
+          font-size: 1rem;
+          font-weight: normal;
+        }
+      }
+      p {
+        font-size: 1rem;
+        font-style: italic;
+        font-family: Inter, sans-serif;
+        margin: 0;
+      }
+    }
+  }
+
+  .read-next {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2.625rem;
+    border-top: 2px solid black;
+    border-bottom: 10px solid black;
+    padding-top: 4.5rem;
+
+    h2 {
+      margin: 0;
+      font-family: "New York Extra Large";
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 38px;
+    }
+
+    article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.25rem;
+
+      a {
+        width: 18rem;
+        text-decoration: none;
+        color: black;
+        font-family: "SF Pro Display";
+        font-weight: 500;
+        font-size: 1.375rem;
+        line-height: 120%;
+        letter-spacing: normal;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      a:hover,
+      article a:active {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .newsletter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 40px 0 40px 0;
+    border-bottom: 2px solid black;
+    margin-bottom: 3.25rem;
+
+    div:first-child {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+
+    h2 {
+      margin: 0;
+      width: 15.563rem;
+      font-family: "New York Extra Large";
+      font-weight: 700;
+      font-size: 1.813rem;
+      line-height: 100%;
+    }
+
+    p {
+      width: 19.125rem;
+      font-family: "SF Pro Text";
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 140%;
+    }
+
+    form {
+      display: flex;
+      width: 19.125rem;
+      position: relative;
+
+      button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 6.75rem;
+        background: black;
+        border: none;
+        color: white;
+        font-family: "SF Pro Text";
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.188rem;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+
+    input {
+      width: 75%;
+      padding: 1.125rem 0.75rem 1.125rem 0.75rem;
+      font-family: "SF Pro Text";
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1.188rem;
+    }
+
+    input:focus {
+      outline: none;
+    }
+  }
+}
+
+/* FOOTER STYLES */
+
+footer {
+  background: black;
+  color: white;
+  padding-top: 6.438rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+
+  p {
+    width: 17.938rem;
+    font-family: "New York Small";
+    font-weight: 400;
+    font-size: 0.813rem;
+    line-height: 140%;
+    letter-spacing: normal;
+  }
+
+  ul {
+    list-style: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 1.688rem;
+
+    a {
+      color: white;
+      font-family: "SF Pro Text";
+      font-weight: 500;
+      font-size: 0.813rem;
+      line-height: 170%;
+      letter-spacing: normal;
+    }
+  }
+
+  small {
+    font-family: "SF Pro Text";
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: normal;
+  }
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1972px;
+  }
+
+  nav {
+    padding: 3.25rem 4rem;
+    margin-bottom: 4.75rem;
+
+    button {
+      display: none;
+    }
+
+    ul {
+      display: block;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      a {
+        text-decoration: none;
+        font-family: "New York Small";
+        font-weight: 500;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        color: black;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  header {
+    .heading {
+      width: 53.625rem;
+      gap: 52px;
+
+      @at-root #{&}__title {
+        font-size: 3.375rem;
+        line-height: 100%;
+      }
+
+      @at-root #{&}__subtitle {
+        font-size: 1.25rem;
+        width: 39.125rem;
+      }
+    }
+  }
+
+  main {
+    .author {
+      width: 40rem;
+    }
+
+    article {
+      p {
+        width: 40rem;
+      }
+    }
+
+    .read-next {
+      width: 60.5rem;
+
+      h2 {
+        font-size: 44px;
+      }
+
+      .read-next-articles {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        column-gap: 2rem;
+      }
+    }
+
+    .newsletter {
+      border: none;
+
+      h2 {
+        width: 27.75rem;
+      }
+
+      p {
+        width: 33.625rem;
+      }
+
+      form {
+        width: 32.5rem;
+      }
+    }
+  }
+
+  footer {
+    p {
+      width: 30.5rem;
+      font-size: 1rem;
+    }
+  }
+}

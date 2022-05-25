@@ -1,4 +1,5 @@
 body {
+  display: -ms-grid;
   display: grid;
   place-items: center;
 }
@@ -9,13 +10,19 @@ body {
 }
 
 /* NAV STYLES */
-
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1.5rem 2rem;
-  box-shadow: 0 1px 0 0 rgb(0 0 0 / 0.16);
+  -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.16);
   margin-bottom: 3.25rem;
 }
 
@@ -36,11 +43,17 @@ nav ul {
 }
 
 /* HEADER STYLES */
-
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   gap: 2.75rem;
   padding-bottom: 3.25rem;
@@ -50,7 +63,7 @@ header {
 
 header a {
   color: black;
-  text-decoration: none; /* no underline */
+  text-decoration: none;
 }
 
 header a:hover,
@@ -62,44 +75,50 @@ header img {
   width: 100%;
 }
 
-header .header-img-container {
-  height: 100%;
-}
-
-.heading {
+header .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 24px;
   width: 20.938rem;
 }
 
-.heading h1,
-p {
-  margin: 0;
-}
-
-.heading h1 {
-  font-famiy: "New York Extra Large";
+header .heading__title {
+  font-family: "New York Extra Large";
   font-size: 2.25rem;
   line-height: 2.688rem;
   letter-spacing: normal;
+  margin: 0;
 }
 
-.heading p {
+header .heading__subtitle {
   font-family: "SF Mono";
   font-weight: 400;
   line-height: 170%;
   letter-spacing: normal;
+  margin: 0;
 }
 
 /* MAIN STYLES */
-
 main {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 1.813rem;
   margin-bottom: 5.125rem;
 }
@@ -113,27 +132,36 @@ main h2 {
   letter-spacing: normal;
 }
 
-article img {
-  width: 100%;
-}
-
 .articles {
   width: 20.938rem;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
+  -ms-grid-columns: (minmax(0, 1fr))[1];
+      grid-template-columns: repeat(1, minmax(0, 1fr));
   place-items: center;
   text-align: center;
   gap: 2.625rem;
 }
 
-.articles article {
+.articles .article {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 1.25rem;
 }
 
-.articles article a {
+.articles .article__img {
+  width: 100%;
+}
+
+.articles .article__link {
   width: 18rem;
   text-decoration: none;
   color: black;
@@ -144,21 +172,30 @@ article img {
   letter-spacing: normal;
 }
 
-.articles article a:hover,
-.articles article a:active {
+.articles .article__link:hover {
+  text-decoration: underline;
+}
+
+.articles .article__link:active {
   text-decoration: underline;
 }
 
 /* FOOTER STYLES */
-
 footer {
   background: black;
   color: white;
   padding-top: 6.438rem;
   padding-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   gap: 2rem;
 }
@@ -177,8 +214,12 @@ footer ul {
   color: white;
   padding: 0;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 1.688rem;
 }
 
@@ -200,29 +241,28 @@ footer small {
 }
 
 /* MEDIA QUERIES */
-
 @media (min-width: 1280px) {
   .container {
     max-width: 1972px;
   }
-
   nav {
     padding: 3.25rem 4rem;
     margin-bottom: 4.75rem;
   }
-
   nav button {
     display: none;
   }
-
   nav ul {
     display: block;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 2rem;
   }
-
   nav ul a {
     text-decoration: none;
     font-family: "New York Small";
@@ -231,61 +271,51 @@ footer small {
     text-transform: uppercase;
     color: black;
   }
-
   nav ul a:hover {
     text-decoration: underline;
   }
-
   header {
     padding-bottom: 2rem;
     margin-bottom: 4rem;
   }
-
   header img {
     width: 53.375rem;
   }
-
-  .heading {
+  header .heading {
     width: 48rem;
     gap: 2rem;
   }
-
-  .heading h1 {
+  header .heading__title {
     font-size: 3.375rem;
     line-height: 100%;
   }
-
-  .heading p {
+  header .heading__subtitle {
     width: 37rem;
     font-size: 1.25rem;
   }
-
   main {
     gap: 2.5rem;
   }
-
   main h2 {
     font-size: 2.75rem;
     line-height: 3.313rem;
   }
-
-  article {
+  main .articles {
+    width: 39.75rem;
+    -ms-grid-columns: (minmax(0, 1fr))[2];
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    row-gap: 4rem;
+    -webkit-column-gap: 1.75rem;
+            column-gap: 1.75rem;
+  }
+  main .articles .article {
     width: 19rem;
     height: 17.125rem;
   }
-
-  article img {
+  main .articles .article__img {
     width: 19rem;
     height: 11rem;
   }
-
-  .articles {
-    width: 39.75rem;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    row-gap: 4rem;
-    column-gap: 1.75rem;
-  }
-
   footer p {
     width: 30.5rem;
     font-size: 1rem;

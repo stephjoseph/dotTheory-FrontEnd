@@ -7,7 +7,7 @@ function displayComment() {
   const html = comments
     .map(
       (comment) => /* html */ `
-        <li class="comment">
+        <li class="comments__comment">
             <h3>${comment.name} <span>commented:</span></h3>
             <p>${comment.comment}</p>
         </li>

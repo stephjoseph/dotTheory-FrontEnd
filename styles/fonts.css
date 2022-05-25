@@ -2,68 +2,68 @@
   font-family: "New York Extra Large";
   font-style: normal;
   font-weight: 700;
-  src: url("./fonts/NewYorkExtraLarge-Bold.otf") format("opentype");
+  src: url("../fonts/NewYorkExtraLarge-Bold.otf") format("opentype");
 }
 
 @font-face {
   font-family: "New York Medium";
   font-style: normal;
   font-weight: 400;
-  src: url("./fonts/NewYorkMedium-Regular.otf") format("opentype");
+  src: url("../fonts/NewYorkMedium-Regular.otf") format("opentype");
 }
 
 @font-face {
   font-family: "New York Small";
   font-style: normal;
   font-weight: 500;
-  src: url("./fonts/NewYorkSmall-Medium.otf") format("opentype");
+  src: url("../fonts/NewYorkSmall-Medium.otf") format("opentype");
 }
 
 @font-face {
   font-family: "New York Small";
   font-style: normal;
   font-weight: 400;
-  src: url("./fonts/NewYorkSmall-Regular.otf") format("opentype");
+  src: url("../fonts/NewYorkSmall-Regular.otf") format("opentype");
 }
 
 @font-face {
   font-family: "New York Medium";
   font-style: normal;
   font-weight: 400;
-  src: url("./fonts/NewYorkMedium-Regular.otf") format("opentype");
+  src: url("../fonts/NewYorkMedium-Regular.otf") format("opentype");
 }
 
 @font-face {
   font-family: "SF Mono";
   font-style: normal;
   font-weight: 400;
-  src: url("./fonts/SF-Mono-Regular.otf") format("opentype");
+  src: url("../fonts/SF-Mono-Regular.otf") format("opentype");
 }
 
 @font-face {
   font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 700;
-  src: url("./fonts/SF-Pro-Display-Bold.otf") format("opentype");
+  src: url("../fonts/SF-Pro-Display-Bold.otf") format("opentype");
 }
 
 @font-face {
   font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 500;
-  src: url("./fonts/SF-Pro-Display-Bold.otf") format("opentype");
+  src: url("../fonts/SF-Pro-Display-Bold.otf") format("opentype");
 }
 
 @font-face {
   font-family: "SF Pro Text";
   font-style: normal;
   font-weight: 700;
-  src: url("./fonts/SF-Pro-Text-Bold.otf") format("opentype");
+  src: url("../fonts/SF-Pro-Text-Bold.otf") format("opentype");
 }
 
 @font-face {
   font-family: "SF Pro Text";
   font-style: normal;
   font-weight: 500;
-  src: url("./fonts/SF-Pro-Text-Medium.otf") format("opentype");
+  src: url("../fonts/SF-Pro-Text-Medium.otf") format("opentype");
 }
