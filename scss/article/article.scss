@@ -206,7 +206,7 @@ main {
     flex-direction: column;
     gap: 24px;
     width: 50%;
-    margin-bottom: 120px;
+    margin-bottom: 4rem;
 
     h2 {
       font-size: 2rem;
@@ -533,6 +533,10 @@ footer {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         column-gap: 2rem;
       }
+    }
+
+    .comment-box {
+      margin-bottom: 7.5rem;
     }
 
     .newsletter {

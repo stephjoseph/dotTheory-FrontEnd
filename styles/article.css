@@ -277,7 +277,7 @@ main .comment-box {
           flex-direction: column;
   gap: 24px;
   width: 50%;
-  margin-bottom: 120px;
+  margin-bottom: 4rem;
 }
 
 main .comment-box h2 {
@@ -647,6 +647,9 @@ footer small {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     -webkit-column-gap: 2rem;
             column-gap: 2rem;
+  }
+  main .comment-box {
+    margin-bottom: 7.5rem;
   }
   main .newsletter {
     border: none;
