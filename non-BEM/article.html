@@ -7,86 +7,164 @@
     <link rel="icon" type="image/png" href="./images/favicon.png" />
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/fonts.css" />
-    <link rel="stylesheet" href="./styles/article.css" />
+    <link rel="stylesheet" href="./styles/output.css" />
     <script
       src="https://kit.fontawesome.com/7dcd3ccfca.js"
       crossorigin="anonymous"
     ></script>
     <title>Stephen Joseph | Article</title>
   </head>
-  <body>
-    <div class="container">
-      <nav>
+  <body class="grid place-items-center">
+    <div class="w-full max-w-[1280px] lg:max-w-[1972px]">
+      <nav
+        class="mb-[3.25rem] flex items-center justify-between py-[1.5rem] px-[2rem] lg:mb-[4.75rem] lg:p-[4rem] lg:py-[3.25rem]"
+      >
         <a href="#">
           <img src="./images/logo.svg" alt="" />
         </a>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
+        <ul class="hidden items-center gap-[2rem] lg:flex">
+          <li>
+            <a
+              class="font-['New_York_Small'] text-[1.25rem] font-medium uppercase text-black hover:underline active:underline"
+              href="./index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="font-['New_York_Small'] text-[1.25rem] font-medium uppercase text-black hover:underline active:underline"
+              href=""
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="font-['New_York_Small'] text-[1.25rem] font-medium uppercase text-black hover:underline active:underline"
+              href=""
+              >Contact</a
+            >
+          </li>
         </ul>
-        <button type="button">
+        <button
+          class="m-0 inline-block cursor-pointer border-none bg-none p-0 no-underline lg:hidden"
+          type="button"
+        >
           <img src="./images/hamburger.svg" alt="" />
         </button>
       </nav>
-      <header>
-        <div class="heading">
-          <h1 class="heading__title">
+      <header
+        class="mb-[1.5rem] flex flex-col items-center gap-[2.25rem] text-center"
+      >
+        <div
+          class="heading flex w-[20.938rem] flex-col items-center gap-6 lg:w-[53.625rem] lg:gap-[52px]"
+        >
+          <h1
+            class="heading__title font-['New_York_Extra_Large'] text-[2.25rem] font-bold leading-[2.688rem] tracking-normal lg:text-[3.375rem] lg:leading-[100%]"
+          >
             A few words about this blog platform, Ghost, and how this site was
             made
           </h1>
-          <p class="heading__subtitle">
+          <p
+            class="heading__subtitle font-['SF_Mono'] font-normal leading-[170%] tracking-normal lg:w-[39.125rem] lg:text-[1.25rem]"
+          >
             Why Ghost (& Figma) instead of Medium, WordPress or other options?
           </p>
         </div>
         <div>
-          <img src="./images/mobile/image 2.png" alt="" />
+          <img class="w-full" src="./images/mobile/image 2.png" alt="" />
         </div>
       </header>
-      <main>
-        <section class="author">
-          <div class="author__info">
-            <div class="author__img-container">
+      <main class="flex flex-col items-center">
+        <section
+          class="author mb-[2rem] flex w-[20.938rem] flex-col gap-[2.5rem] border-t-2 border-solid border-black pt-[1.5rem] lg:w-[40rem]"
+        >
+          <div class="author__info flex items-center gap-[1rem]">
+            <div
+              class="author__img-container h-[3.894rem] w-[3.5rem] rounded-full"
+            >
               <img
-                class="author__img"
+                class="author__img h-[3.894rem] w-[3.5rem] rounded-full"
                 src="./images/mobile/image-homepage-profile@2x.jpg"
                 alt=""
               />
             </div>
-            <div class="author__details">
-              <h3>Stephen Joseph</h3>
-              <p>Apr 24, 2022 · 4 min read</p>
+            <div class="author__details flex flex-col gap-[6px]">
+              <h3
+                class="font-['SF_Pro_Text'] text-[0.813rem] font-bold uppercase leading-[1rem] tracking-[5%]"
+              >
+                Stephen Joseph
+              </h3>
+              <p
+                class="font-['SF_Pro_Text'] text-[0.813rem] font-normal leading-[1rem] tracking-normal"
+              >
+                Apr 24, 2022 · 4 min read
+              </p>
             </div>
           </div>
-          <div class="author__links">
-            <a href="#"><img src="./images/facebook-brands.svg" alt="" /></a>
-            <a href="#"><img src="./images/twitter-brands.svg" alt="" /></a>
-            <a href="#"><img src="./images/whatsapp-brands.svg" alt="" /></a>
+          <div
+            class="author__links grid grid-cols-3 rounded-[4px] border border-solid border-[#eaeaea]"
+          >
+            <a
+              class="flex w-full items-center justify-center border-r border-solid border-[#eaeaea] py-[1.063rem]"
+              href="#"
+              ><img
+                class="h-[20px] w-[20px]"
+                src="./images/facebook-brands.svg"
+                alt=""
+            /></a>
+            <a
+              class="flex w-full items-center justify-center border-r border-solid border-[#eaeaea] py-[1.063rem]"
+              href="#"
+              ><img
+                class="h-[20px] w-[20px]"
+                src="./images/twitter-brands.svg"
+                alt=""
+            /></a>
+            <a
+              class="flex w-full items-center justify-center py-[1.063rem]"
+              href="#"
+              ><img
+                class="h-[20px] w-[20px]"
+                src="./images/whatsapp-brands.svg"
+                alt=""
+            /></a>
           </div>
         </section>
-        <article>
-          <p>
+        <article class="mb-12 flex flex-col items-center gap-[2.625rem]">
+          <p
+            class="w-[20.625rem] font-['New_York_Medium'] text-[1rem] font-normal leading-[170%] tracking-normal lg:w-[40rem]"
+          >
             This lovely web is full of everything which is created I don't know
             what in mind, considering that sometimes totally bonkers stuff might
             be highly relevant if it has the right kind of thinking behind it. 
           </p>
           <div>
-            <h2>Next on the pipeline</h2>
-            <p>
+            <h2
+              class="mb-[19px] font-['SF_Pro_Display'] text-[1.5rem] font-bold leading-[1.938rem]"
+            >
+              Next on the pipeline
+            </h2>
+            <p
+              class="w-[20.625rem] font-['New_York_Medium'] text-[1rem] font-normal leading-[170%] tracking-normal lg:w-[40rem]"
+            >
               This lovely web is full of everything which is created I don't
               know what in mind, considering that sometimes totally bonkers
               stuff might be highly relevant if it has the right kind of
               thinking behind it. 
             </p>
           </div>
-          <figure>
-            <img src="./images/mobile/Rectangle 8.png" alt="" />
-            <figcaption>
+          <figure class="flex flex-col items-center gap-[0.75rem] text-center">
+            <img class="w-full" src="./images/mobile/Rectangle 8.png" alt="" />
+            <figcaption
+              class="w-[20.938rem] font-['SF_Pro_Text'] text-[13px] font-medium leading-[140%]"
+            >
               Image caption centered this way and I’ll make this a bit longer to
               indicate the amount of line-height.
             </figcaption>
           </figure>
-          <p>
+          <p
+            class="w-[20.625rem] font-['New_York_Medium'] text-[1rem] font-normal leading-[170%] tracking-normal lg:w-[40rem]"
+          >
             This lovely web is full of everything which is created I don't know
             what in mind, considering that sometimes totally bonkers stuff might
             be highly relevant if it has the right kind of thinking behind
@@ -97,69 +175,129 @@
             in some of the established channels.
           </p>
         </article>
-        <div class="comment-box">
-          <h2>Comments</h2>
-          <form class="comment-form">
-            <input type="text" name="name" placeholder="Full Name" required />
+        <div
+          class="comment-box mb-[4rem] flex w-4/5 flex-col gap-6 lg:mb-[7.5rem]"
+        >
+          <h2 class="font-['New_York_Extra_Large'] text-[2rem] font-bold">
+            Comments
+          </h2>
+          <form class="comment-form flex flex-col gap-4">
+            <input
+              class="rounded-lg border-2 border-solid border-black p-4 font-['Inter'] text-[1rem] focus:outline-none"
+              type="text"
+              name="name"
+              placeholder="Full Name"
+              required
+            />
             <textarea
+              class="h-[6rem] rounded-lg border-2 border-solid border-black p-4 font-['Inter'] text-[1rem] focus:outline-none"
               name="comment"
               placeholder="Write a comment.."
               required
             ></textarea>
-            <button type="submit">Post Comment</button>
+            <button
+              class="active:black w-[10rem] cursor-pointer rounded-sm border border-solid border-black py-2 px-4 font-['Inter'] text-[1rem] hover:bg-black hover:text-white"
+              type="submit"
+            >
+              Post Comment
+            </button>
           </form>
         </div>
-        <ul class="comments"></ul>
-        <section class="read-next">
-          <h2>What to read next</h2>
-          <div class="read-next-articles">
-            <article>
+        <ul class="comments mb-[120px] flex w-4/5 flex-col gap-4 p-4"></ul>
+        <section
+          class="read-next mb-24 flex flex-col items-center gap-[2.625rem] border-t-2 border-b-8 border-solid border-black pb-[2rem] pt-[4.5rem] text-center lg:w-[60.5rem]"
+        >
+          <h2
+            class="font-['New_York_Extra_Large'] text-[2rem] font-bold leading-[38px] lg:text-[44px]"
+          >
+            What to read next
+          </h2>
+          <div
+            class="read-next-articles flex flex-col items-center gap-5 lg:grid lg:grid-cols-3 lg:place-items-stretch lg:gap-y-[2rem]"
+          >
+            <article
+              class="flex flex-col items-center gap-[1.25rem] hover:underline active:underline"
+            >
               <div>
-                <img src="./images/mobile/Rectangle 4.png" alt="" />
+                <img
+                  class="w-full"
+                  src="./images/mobile/Rectangle 4.png"
+                  alt=""
+                />
               </div>
-              <a href=""
+              <a
+                class="w-[18rem] font-['SF_Pro_Display'] text-[1.375rem] font-medium leading-[120%] tracking-normal text-black hover:underline active:underline"
+                href=""
                 >Granny gives everyone the finger, and other tips from OFFF
                 Barcelona</a
               >
             </article>
-            <article>
+            <article class="flex flex-col items-center gap-[1.25rem]">
               <div>
-                <img src="./images/mobile/Rectangle 11.png" alt="" />
+                <img
+                  class="w-full"
+                  src="./images/mobile/Rectangle 11.png"
+                  alt=""
+                />
               </div>
-              <a href=""
+              <a
+                class="w-[18rem] font-['SF_Pro_Display'] text-[1.375rem] font-medium leading-[120%] tracking-normal text-black hover:underline active:underline"
+                href=""
                 >Hello world, or, in other words, why this blog exists</a
               >
             </article>
-            <article>
+            <article class="flex flex-col items-center gap-[1.25rem]">
               <div>
-                <img src="./images/mobile/Rectangle 10.png" alt="" />
+                <img
+                  class="w-full"
+                  src="./images/mobile/Rectangle 10.png"
+                  alt=""
+                />
               </div>
-              <a href=""
+              <a
+                class="w-[18rem] font-['SF_Pro_Display'] text-[1.375rem] font-medium leading-[120%] tracking-normal text-black"
+                href=""
                 >Here are some things you should know regarding how we work
               </a>
             </article>
           </div>
         </section>
-        <section class="newsletter">
-          <div>
-            <h2>Sign up for the newsletter</h2>
-            <p>
+        <section
+          class="newsletter mb-[3.25rem] flex w-full flex-col items-center gap-[2rem] border-b-2 border-solid border-black py-10 text-center lg:border-none"
+        >
+          <div class="flex flex-col items-center gap-[14px]">
+            <h2
+              class="w-[15.563rem] font-['New_York_Extra_Large'] text-[1.813rem] font-bold leading-[100%] lg:w-[27.75rem]"
+            >
+              Sign up for the newsletter
+            </h2>
+            <p
+              class="w-[19.125rem] font-['SF_Pro_Text'] text-[1rem] font-normal leading-[140%] lg:w-[33.625rem]"
+            >
               If you want relevant updates occasionally, sign up for the private
               newsletter. Your email is never shared.
             </p>
           </div>
-          <form action="">
+          <form class="relative flex w-[19.125rem] lg:w-[33.625rem]" action="">
             <input
+              class="w-3/4 border border-solid border-black py-[1.125rem] px-[0.75rem] text-[1rem] font-medium leading-[1.188rem] focus:outline-none"
               type="email"
               name="email"
               id="email"
               placeholder="Enter your email.."
             />
-            <button type="submit">Sign up</button>
+            <button
+              class="font-[1rem] absolute top-0 right-0 h-full w-[6.75rem] cursor-pointer border-none bg-black font-['SF_Pro_Text'] font-medium uppercase leading-[1.188rem] text-white"
+              type="submit"
+            >
+              Sign up
+            </button>
           </form>
         </section>
       </main>
-      <footer>
+      <footer
+        class="flex flex-col items-center gap-[2rem] bg-black pt-[6.438rem] pb-[2rem] text-center text-white"
+      >
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="61" height="32">
             <path
@@ -169,17 +307,40 @@
             />
           </svg>
         </div>
-        <p>
+        <p
+          class="w-[17.938rem] font-['New_York_Small'] text-[0.813rem] font-normal leading-[140%] tracking-normal lg:w-[30.5rem] lg:text-[1rem]"
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu velit
           tempus erat egestas efficitur. In hac habitasse platea dictumst. Fusce
           a nunc eget ligula.
         </p>
-        <ul>
-          <li><a href="">Twitter</a></li>
-          <li><a href="">LinkedIn</a></li>
-          <li><a href="">Instagram</a></li>
+        <ul class="flex items-center gap-[1.688rem]">
+          <li>
+            <a
+              class="font-['SF_Pro_Text'] text-[0.813rem] font-medium leading-[170%] tracking-normal hover:underline active:underline"
+              href=""
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a
+              class="font-['SF_Pro_Text'] text-[0.813rem] font-medium leading-[170%] tracking-normal hover:underline active:underline"
+              href=""
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              class="font-['SF_Pro_Text'] text-[0.813rem] font-medium leading-[170%] tracking-normal hover:underline active:underline"
+              href=""
+              >Instagram</a
+            >
+          </li>
         </ul>
-        <small>© 2022 Stephen Joseph Co. All rights reserved.</small>
+        <small
+          class="font-['SF_Pro_Text'] text-[0.75rem] font-medium leading-[140%] tracking-normal"
+          >© 2022 Stephen Joseph Co. All rights reserved.</small
+        >
       </footer>
     </div>
     <script src="script.js"></script>

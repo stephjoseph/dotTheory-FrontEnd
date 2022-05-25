@@ -7,9 +7,9 @@ function displayComment() {
   const html = comments
     .map(
       (comment) => /* html */ `
-        <li class="comments__comment">
-            <h3>${comment.name} <span>commented:</span></h3>
-            <p>${comment.comment}</p>
+        <li class="comments__comment flex flex-col gap-4 p-8 border border-solid border-black/60 rounded-md ">
+            <h3 class="font-['Inter'] font-semibold text-[1.5rem]">${comment.name} <span class="text-[1rem] font-normal">commented:</span></h3>
+            <p class="text-[1rem] font-['Inter'] italic">${comment.comment}</p>
         </li>
     `
     )
