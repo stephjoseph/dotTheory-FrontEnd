@@ -72,8 +72,8 @@ function restartGame() {
   });
 
   setTimeout(() => {
-    resetBoard();
     shuffle();
+    resetBoard();
   }, 500);
 }
 
