@@ -84,6 +84,4 @@ cards.forEach((card) => {
   card.addEventListener("click", flipCard);
 });
 
-restartBtn.addEventListener("click", () => {
-  restartGame();
-});
+restartBtn.addEventListener("click", restartGame);
