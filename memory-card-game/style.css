@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background: #fcfcfc;
+  display: grid;
+  place-items: center;
+}
+
+.game {
+  width: 640px;
+  height: 640px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+  margin-bottom: 1rem;
+}
+
+.card {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.card:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+}
+
+.card__front,
+.card__back {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.card__front {
+  transform: rotateY(180deg);
+  background: #ffb84a;
+}
+
+.card__back {
+  background: #304859;
+}
+
+.restart-button {
+  font-family: "Atkinson Hyperlegible";
+  font-size: 1rem;
+  color: #fcfcfc;
+  width: 149px;
+  height: 52px;
+  color: fcfcfc;
+  background: #fda214;
+  border: none;
+  border-radius: 26px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.5s;
+  transform: scale(1);
+}
+
+.restart-button:hover {
+  background: #ffb84a;
+}
+
+.restart-button:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
