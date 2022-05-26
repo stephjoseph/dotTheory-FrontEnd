@@ -8,10 +8,10 @@ let lockBoard = false;
 // and which cards are flipped
 let firstCard, secondCard;
 
-function flipCard() {
+function flipCard(e) {
   if (lockBoard) return;
   if (this === firstCard) return;
-
+  console.log(e);
   this.classList.toggle("flip");
 
   if (!hasFlippedCard) {
@@ -68,11 +68,13 @@ function shuffle() {
 function restartGame() {
   cards.forEach((card) => {
     card.classList.remove("flip");
+    card.addEventListener("click", flipCard);
   });
-  resetBoard();
+
   setTimeout(() => {
+    resetBoard();
     shuffle();
-  }, 1000);
+  }, 500);
 }
 
 window.onload = () => {
