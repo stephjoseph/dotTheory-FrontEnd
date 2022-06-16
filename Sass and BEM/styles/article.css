@@ -12,6 +12,10 @@ body {
 
 /* NAV STYLES */
 nav {
+  padding: 1.5rem 2rem;
+  -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.16);
+  margin-bottom: 3.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,10 +29,6 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 1.5rem 2rem;
-  -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.16);
-          box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.16);
-  margin-bottom: 3.25rem;
 }
 
 nav button {
@@ -49,6 +49,9 @@ nav ul {
 
 /* HEADER STYLES */
 header {
+  text-align: center;
+  gap: 2.25rem;
+  margin-bottom: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,9 +65,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
-  gap: 2.25rem;
-  margin-bottom: 1.5rem;
 }
 
 header img {
@@ -72,6 +72,8 @@ header img {
 }
 
 header .heading {
+  gap: 24px;
+  width: 20.938rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,12 +87,10 @@ header .heading {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 24px;
-  width: 20.938rem;
 }
 
 header .heading__title {
-  font-family: "New York Extra Large";
+  font-family: 'New York Extra Large';
   font-size: 2.25rem;
   line-height: 2.688rem;
   letter-spacing: normal;
@@ -98,7 +98,7 @@ header .heading__title {
 }
 
 header .heading__subtitle {
-  font-family: "SF Mono";
+  font-family: 'SF Mono';
   font-weight: 400;
   line-height: 170%;
   letter-spacing: normal;
@@ -137,6 +137,7 @@ main .author {
 }
 
 main .author__info {
+  gap: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,10 +151,10 @@ main .author__info {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 1rem;
 }
 
 main .author__details {
+  gap: 6px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,11 +168,10 @@ main .author__details {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 6px;
 }
 
 main .author__details h3 {
-  font-family: "SF Pro Text";
+  font-family: 'SF Pro Text';
   font-weight: bold;
   font-size: 0.813rem;
   line-height: 1rem;
@@ -181,7 +181,7 @@ main .author__details h3 {
 }
 
 main .author__details p {
-  font-family: "SF Pro Text";
+  font-family: 'SF Pro Text';
   font-weight: 400;
   font-size: 0.813rem;
   line-height: 1rem;
@@ -235,6 +235,8 @@ main .author .author__links a {
 }
 
 main article {
+  gap: 2.625rem;
+  margin-bottom: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,13 +250,11 @@ main article {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 2.625rem;
-  margin-bottom: 48px;
 }
 
 main article p {
   width: 20.938rem;
-  font-family: "New York Medium";
+  font-family: 'New York Medium';
   font-weight: 400;
   font-size: 1rem;
   line-height: 170%;
@@ -263,7 +263,7 @@ main article p {
 
 main article h2 {
   margin: 0 0 19px 0;
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-weight: 700;
   line-height: 1.938rem;
 }
@@ -286,7 +286,7 @@ main article figure {
 
 main article figure figcaption {
   width: 20.938rem;
-  font-family: "SF Pro Text";
+  font-family: 'SF Pro Text';
   font-weight: 500;
   line-height: 140%;
   font-size: 13px;
@@ -324,13 +324,13 @@ main .comment-box form {
   gap: 16px;
 }
 
-main .comment-box input[type="text"] {
+main .comment-box input[type='text'] {
   padding: 16px;
   font-family: Inter, sans-serif;
   font-size: 1rem;
 }
 
-main .comment-box input[type="text"]:focus,
+main .comment-box input[type='text']:focus,
 main .comment-box textarea:focus {
   outline: none;
 }
@@ -404,6 +404,11 @@ main .comments__comment p {
 }
 
 main .read-next {
+  text-align: center;
+  gap: 2.625rem;
+  border-top: 2px solid black;
+  border-bottom: 10px solid black;
+  padding-top: 4.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,22 +422,18 @@ main .read-next {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
-  gap: 2.625rem;
-  border-top: 2px solid black;
-  border-bottom: 10px solid black;
-  padding-top: 4.5rem;
 }
 
 main .read-next h2 {
   margin: 0;
-  font-family: "New York Extra Large";
+  font-family: 'New York Extra Large';
   font-weight: 700;
   font-size: 2rem;
   line-height: 38px;
 }
 
 main .read-next article {
+  gap: 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -446,14 +447,13 @@ main .read-next article {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1.25rem;
 }
 
 main .read-next article a {
   width: 18rem;
   text-decoration: none;
   color: black;
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-weight: 500;
   font-size: 1.375rem;
   line-height: 120%;
@@ -470,28 +470,12 @@ main .read-next article article a:active {
 }
 
 main .newsletter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   width: 100%;
   text-align: center;
   gap: 2rem;
   padding: 40px 0 40px 0;
   border-bottom: 2px solid black;
   margin-bottom: 3.25rem;
-}
-
-main .newsletter div:first-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -505,13 +489,29 @@ main .newsletter div:first-child {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+main .newsletter div:first-child {
   gap: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main .newsletter h2 {
   margin: 0;
   width: 15.563rem;
-  font-family: "New York Extra Large";
+  font-family: 'New York Extra Large';
   font-weight: 700;
   font-size: 1.813rem;
   line-height: 100%;
@@ -519,7 +519,7 @@ main .newsletter h2 {
 
 main .newsletter p {
   width: 19.125rem;
-  font-family: "SF Pro Text";
+  font-family: 'SF Pro Text';
   font-weight: 400;
   font-size: 1rem;
   line-height: 140%;
@@ -542,7 +542,7 @@ main .newsletter form button {
   background: black;
   border: none;
   color: white;
-  font-family: "SF Pro Text";
+  font-family: 'SF Pro Text';
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.188rem;
@@ -553,7 +553,7 @@ main .newsletter form button {
 main .newsletter input {
   width: 75%;
   padding: 1.125rem 0.75rem 1.125rem 0.75rem;
-  font-family: "SF Pro Text";
+  font-family: 'SF Pro Text';
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.188rem;
@@ -585,7 +585,7 @@ footer {
 
 footer p {
   width: 17.938rem;
-  font-family: "New York Small";
+  font-family: 'New York Small';
   font-weight: 400;
   font-size: 0.813rem;
   line-height: 140%;
@@ -608,7 +608,7 @@ footer ul {
 
 footer ul a {
   color: white;
-  font-family: "SF Pro Text";
+  font-family: 'SF Pro Text';
   font-weight: 500;
   font-size: 0.813rem;
   line-height: 170%;
@@ -616,7 +616,7 @@ footer ul a {
 }
 
 footer small {
-  font-family: "SF Pro Text";
+  font-family: 'SF Pro Text';
   font-size: 0.75rem;
   font-weight: 500;
   line-height: 140%;
@@ -648,7 +648,7 @@ footer small {
   }
   nav ul a {
     text-decoration: none;
-    font-family: "New York Small";
+    font-family: 'New York Small';
     font-weight: 500;
     font-size: 1.25rem;
     text-transform: uppercase;

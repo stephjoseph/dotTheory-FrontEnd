@@ -11,6 +11,10 @@ body {
 
 /* NAV STYLES */
 nav {
+  padding: 1.5rem 2rem;
+  -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.16);
+  margin-bottom: 3.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,10 +28,6 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 1.5rem 2rem;
-  -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.16);
-          box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.16);
-  margin-bottom: 3.25rem;
 }
 
 nav button {
@@ -48,6 +48,11 @@ nav ul {
 
 /* HEADER STYLES */
 header {
+  text-align: center;
+  gap: 2.75rem;
+  padding-bottom: 3.25rem;
+  border-bottom: 2px solid black;
+  margin-bottom: 3.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,11 +66,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
-  gap: 2.75rem;
-  padding-bottom: 3.25rem;
-  border-bottom: 2px solid black;
-  margin-bottom: 3.5rem;
 }
 
 header a {
@@ -83,6 +83,8 @@ header img {
 }
 
 header .heading {
+  gap: 24px;
+  width: 20.938rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,12 +98,10 @@ header .heading {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 24px;
-  width: 20.938rem;
 }
 
 header .heading__title {
-  font-family: "New York Extra Large";
+  font-family: 'New York Extra Large';
   font-size: 2.25rem;
   line-height: 2.688rem;
   letter-spacing: normal;
@@ -109,7 +109,7 @@ header .heading__title {
 }
 
 header .heading__subtitle {
-  font-family: "SF Mono";
+  font-family: 'SF Mono';
   font-weight: 400;
   line-height: 170%;
   letter-spacing: normal;
@@ -118,6 +118,9 @@ header .heading__subtitle {
 
 /* MAIN STYLES */
 main {
+  width: 100%;
+  gap: 1.813rem;
+  margin-bottom: 5.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,14 +134,11 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
-  gap: 1.813rem;
-  margin-bottom: 5.125rem;
 }
 
 main h2 {
   margin: 0;
-  font-family: "New York Extra Large";
+  font-family: 'New York Extra Large';
   font-size: 2rem;
   font-weight: 700;
   line-height: 2.375rem;
@@ -157,6 +157,7 @@ main h2 {
 }
 
 .articles .article {
+  gap: 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,7 +171,6 @@ main h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1.25rem;
 }
 
 .articles .article__img {
@@ -181,7 +181,7 @@ main h2 {
   width: 18rem;
   text-decoration: none;
   color: black;
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   font-weight: 500;
   font-size: 1.375rem;
   line-height: 120%;
@@ -218,7 +218,7 @@ footer {
 
 footer p {
   width: 17.938rem;
-  font-family: "New York Small";
+  font-family: 'New York Small';
   font-weight: 400;
   font-size: 0.813rem;
   line-height: 140%;
@@ -241,7 +241,7 @@ footer ul {
 
 footer ul a {
   color: white;
-  font-family: "SF Pro Text";
+  font-family: 'SF Pro Text';
   font-weight: 500;
   font-size: 0.813rem;
   line-height: 170%;
@@ -249,7 +249,7 @@ footer ul a {
 }
 
 footer small {
-  font-family: "SF Pro Text";
+  font-family: 'SF Pro Text';
   font-size: 0.75rem;
   font-weight: 500;
   line-height: 140%;
@@ -281,7 +281,7 @@ footer small {
   }
   nav ul a {
     text-decoration: none;
-    font-family: "New York Small";
+    font-family: 'New York Small';
     font-weight: 500;
     font-size: 1.25rem;
     text-transform: uppercase;
